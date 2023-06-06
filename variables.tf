@@ -1,0 +1,15 @@
+variable "tenant" {}
+variable "name" {}
+variable "environment" {}
+variable "vpc_id" {}
+variable "cidr_block" {}
+variable "subnet_ids" {}
+variable "kms_key_id" {}
+variable "mq_name" {}
+variable "multi_az" {}
+variable "instance_type" {}
+variable "engine_version" {}
+variable "maintenance_day" {}
+variable "maintenance_time" {}
+variable "auto_minor_version_upgrade" {}
+variable "apply_immediately" {}
