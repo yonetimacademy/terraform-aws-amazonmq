@@ -1,10 +1,10 @@
 # terraform-aws-amazonmq
 
-Magicorn made Terraform Module for AWS Provider
+Cloud&Cloud made Terraform Module for AWS Provider
 --
 ```
 module "amazonmq" {
-  source         = "magicorntech/amazonmq/aws"
+  source         = "yonetimacademy/amazonmq/aws"
   version        = "0.0.1"
   tenant         = var.tenant
   name           = var.name
@@ -27,4 +27,4 @@ module "amazonmq" {
 ```
 
 ## Notes
-1) Works better with magicorn-aws-kms module.
+1) Works better with yonetimacademy-aws-kms module.

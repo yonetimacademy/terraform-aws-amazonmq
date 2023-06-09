@@ -1,6 +1,6 @@
 resource "aws_ssm_parameter" "main_rmq_console_url" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/amazonmq/${var.mq_name}/console_url"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = aws_mq_broker.rmq.instances.0.console_url
 
@@ -9,14 +9,14 @@ resource "aws_ssm_parameter" "main_rmq_console_url" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
 
 resource "aws_ssm_parameter" "main_rmq_endpoint" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/amazonmq/${var.mq_name}/endpoint"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = aws_mq_broker.rmq.instances.0.endpoints.0
 
@@ -25,14 +25,14 @@ resource "aws_ssm_parameter" "main_rmq_endpoint" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
 
 resource "aws_ssm_parameter" "main_rmq_user" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/amazonmq/${var.mq_name}/user"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = random_string.mquser.result
 
@@ -41,14 +41,14 @@ resource "aws_ssm_parameter" "main_rmq_user" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
 
 resource "aws_ssm_parameter" "main_rmq_pass" {
   name        = "/${var.tenant}/${var.name}/${var.environment}/amazonmq/${var.mq_name}/pass"
-  description = "Managed by Magicorn"
+  description = "Managed by yonetimacademy"
   type        = "SecureString"
   value       = random_password.mqpass.result
 
@@ -57,7 +57,7 @@ resource "aws_ssm_parameter" "main_rmq_pass" {
     Tenant      = var.tenant
     Project     = var.name
     Environment = var.environment
-    Maintainer  = "Magicorn"
+    Maintainer  = "yonetimacademy"
     Terraform   = "yes"
   }
 }
